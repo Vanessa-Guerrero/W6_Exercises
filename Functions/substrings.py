@@ -21,12 +21,12 @@ for name in names:
     first_space_index = name.find(" ")  # Finding the space from left to right
     last_space_index = name.rfind(" ")  # Finding the space from right to left
 
-    if first_space_index == -1:  # Used if there's only one name with no space (First name only)
+    if first_space_index == -1:  # Used if there's only one name with no space (First name only) - space index not found
         print (f'Full name: {name} \nFirst Name: {name} \n')
 
-    elif first_space_index == last_space_index:   # Used if there's two names (First and last name)
+    elif first_space_index == last_space_index:   # Used if there's two names (First and last name) - space index matches
         first_name = name[:first_space_index]     # First name is up to the space index
-        last_name = name[first_space_index + 1:]  # Last name is 1 + the space index (to not include the space)
+        last_name = name[last_space_index + 1:]  # Last name is 1 + the space index (to not include the space)
         print (f'Full name: {name} \nFirst Name: {first_name} \nLast Name: {last_name}')
 
     else:                                          # Used for 3 names (First, middle, or last name)
