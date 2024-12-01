@@ -1,3 +1,3 @@
 # W6_Exercises
 
-Exercises completed for Python during Week 6 of Data Analyst Academy
+Python exercises completed related to Week 6 workbook for Data Analyst Academy
